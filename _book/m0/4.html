@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4 Docker Image · RxTest 学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="showgpray@gmail.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.html" />
+    
+    
+    <link rel="prev" href="3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ASP.NET Core + React/Flutter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../c1/r.html">
+            
+                <a href="../c1/r.html">
+            
+                    
+                    第 1 章: "Walking Skeleton" 服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../c1/1.html">
+            
+                <a href="../c1/1.html">
+            
+                    
+                    1 服务端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../c1/2.html">
+            
+                <a href="../c1/2.html">
+            
+                    
+                    2 API 骨架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../c1/3.html">
+            
+                <a href="../c1/3.html">
+            
+                    
+                    3 附 docker 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../c2/r.html">
+            
+                <a href="../c2/r.html">
+            
+                    
+                    第 2 章: "Walking Skeleton" 客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../c2/1.html">
+            
+                <a href="../c2/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../c2/2.html">
+            
+                <a href="../c2/2.html">
+            
+                    
+                    2 通过客户端访问 API 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../c3/r.html">
+            
+                <a href="../c3/r.html">
+            
+                    
+                    第 3 章: 后端 Acvitity 接口实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../c3/1.html">
+            
+                <a href="../c3/1.html">
+            
+                    
+                    1 添加 Activity 表和 Seed Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../c3/2.html">
+            
+                <a href="../c3/2.html">
+            
+                    
+                    2 CQRS: 命令查询职责分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../c3/3.html">
+            
+                <a href="../c3/3.html">
+            
+                    
+                    3 清晰架构实现1: MediatR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../c3/4.html">
+            
+                <a href="../c3/4.html">
+            
+                    
+                    4 实现其他几个 Activity 操作: CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../c3/5.html">
+            
+                <a href="../c3/5.html">
+            
+                    
+                    5 添加 Swagger 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../c4/r.html">
+            
+                <a href="../c4/r.html">
+            
+                    
+                    第 4 章: Flutter 实现的前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../c4/1.html">
+            
+                <a href="../c4/1.html">
+            
+                    
+                    1 基盘搭建概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../c4/2.html">
+            
+                <a href="../c4/2.html">
+            
+                    
+                    2 使用 DIO 搭建数据访问层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../c4/3.html">
+            
+                <a href="../c4/3.html">
+            
+                    
+                    3 使用 Fluro 搭建路由系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../c5/r.html">
+            
+                <a href="../c5/r.html">
+            
+                    
+                    第 5 章 数据验证和错误处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../c5/1.html">
+            
+                <a href="../c5/1.html">
+            
+                    
+                    1 数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../c5/2.html">
+            
+                <a href="../c5/2.html">
+            
+                    
+                    2 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../c6/r.html">
+            
+                <a href="../c6/r.html">
+            
+                    
+                    第 6 章 Identity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../c6/1.html">
+            
+                <a href="../c6/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../c6/2.html">
+            
+                <a href="../c6/2.html">
+            
+                    
+                    2 实现 Identity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../c6/3.html">
+            
+                <a href="../c6/3.html">
+            
+                    
+                    3 JWT 实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="r.html">
+            
+                <a href="r.html">
+            
+                    
+                    第 M0 章 Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2 Docker Networking 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3 Docker Network DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4 Docker Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5 Docker 容器生命期和数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6 Docker Compose的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../m1/r.html">
+            
+                <a href="../m1/r.html">
+            
+                    
+                    第 M1 章 在开发过程中使用 Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../m1/1.html">
+            
+                <a href="../m1/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../m2/r.html">
+            
+                <a href="../m2/r.html">
+            
+                    
+                    M2 后端开发路线图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../m2/1.html">
+            
+                <a href="../m2/1.html">
+            
+                    
+                    1 计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4 Docker Image</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="docker-image">Docker Image</h1>
+<p>&#x672C;&#x8282;&#x6765;&#x770B;&#x4EC0;&#x4E48;&#x662F; Docker Image, &#x5B83;&#x5185;&#x90E8;&#x662F;&#x4EC0;&#x4E48;, &#x600E;&#x4E48;&#x627E; Image, &#x600E;&#x4E48;&#x6784;&#x5EFA; Image. &#x5185;&#x5BB9;&#x5982;&#x4E0B;:</p>
+<ul>
+<li>&#x4EC0;&#x4E48;&#x662F; Image</li>
+<li>&#x4F7F;&#x7528; Docker Hub registry</li>
+<li>&#x7BA1;&#x7406;&#x672C;&#x5730;&#x7684; Image &#x7F13;&#x5B58;</li>
+<li>&#x6784;&#x9020;&#x81EA;&#x5DF1;&#x7684; Image</li>
+</ul>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;-image">&#x4EC0;&#x4E48;&#x662F; Image</h2>
+<p>Image &#x5177;&#x6709;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#x548C;&#x7279;&#x6027;:</p>
+<ul>
+<li>App &#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4EE5;&#x53CA; APP &#x7684;&#x6240;&#x6709;&#x4F9D;&#x8D56;</li>
+<li>Image &#x7684;&#x5143;&#x6570;&#x636E;&#x4FE1;&#x606F;, &#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A; Image &#x7684;&#x76F8;&#x5173;&#x6307;&#x4EE4;</li>
+<li>&#x5B98;&#x65B9;&#x5B9A;&#x4E49;: Image &#x662F;&#x4E00;&#x4E2A; root &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x6539;&#x52A8;&#x5E8F;&#x5217;, &#x4EE5;&#x53CA;&#x5728;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x91CC;&#x9762;&#x7684;&#x76F8;&#x5173;&#x6267;&#x884C;&#x53C2;&#x6570;&#x7684;&#x6709;&#x5E8F;&#x96C6;&#x5408;.</li>
+<li>Image &#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684; OS, &#x5B83;&#x4E0D;&#x5305;&#x542B;&#x5185;&#x6838;(kernel), &#x4E0D;&#x5305;&#x542B;&#x5185;&#x6838;&#x6A21;&#x5757;(&#x6BD4;&#x5982;&#x9A71;&#x52A8;), &#x5185;&#x6838;&#x662F;&#x7531; Host &#x63D0;&#x4F9B;&#x7684;.</li>
+<li>Image &#x4E0D;&#x4F1A;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;, &#x542F;&#x52A8;&#x5B83;&#x4EC5;&#x4EC5;&#x662F;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</li>
+<li>Image &#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x5C0F;, &#x6BD4;&#x5982; golang &#x7684;&#x9759;&#x6001;&#x5E93;&#x6216;&#x4F60;&#x7684; APP &#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;.</li>
+<li>Image &#x4E5F;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x5927;, &#x6BD4;&#x5982; Ubuntu Image &#x5C31;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6709; apt, apache, PHP &#x7B49;&#x7B49;.</li>
+</ul>
+<p>&#x901A;&#x8FC7; Docker Hub, &#x53EF;&#x4EE5;&#x627E;&#x5230;&#x8BB8;&#x591A;&#x4E09;&#x65B9;&#x6216;&#x5B98;&#x65B9;&#x7684; Image.</p>
+<h2 id="image-&#x7684;-layer">Image &#x7684; Layer</h2>
+<p>Image &#x662F;&#x57FA;&#x4E8E; Union file system &#x7684;&#x6982;&#x5FF5;&#x6765;&#x6784;&#x5EFA;&#x7684;, &#x901A;&#x8FC7; <code>docker history</code> &#x547D;&#x4EE4;&#x5C31;&#x53EF;&#x4EE5;&#x6253;&#x5370;&#x4E00;&#x4E2A; Image &#x7684; Layer &#x5386;&#x53F2;.</p>
+<p>&#x4EFB;&#x4F55; Image &#x90FD;&#x662F;&#x4ECE;&#x4E00;&#x4E2A;&#x7A7A;&#x7684; Layer &#x5F00;&#x59CB;&#x6784;&#x5EFA;&#x7684;, &#x8FD9;&#x4E2A; Layer &#x79F0;&#x4E3A; <code>scratch</code>, &#x800C;&#x4E4B;&#x540E;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x5BF9; Image &#x5185;&#x90E8;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x6539;&#x52A8;, &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Layer.</p>
+<p>&#x6BD4;&#x5982;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Image, &#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x56FE;&#x4E2D;&#x90A3;&#x6837;:</p>
+<p><img src="imgs/2.jpg" alt="" width="80%"></p>
+<p>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x548C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x53EA;&#x662F;&#x6700;&#x540E;&#x7684;&#x6307;&#x4EE4;&#x4E0D;&#x540C;, &#x5219; Image &#x7684;&#x60C5;&#x51B5;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;:</p>
+<p><img src="imgs/4.jpg" alt="" width="80%"></p>
+<p>&#x57FA;&#x4E8E;&#x540C;&#x4E00;&#x4E2A; Image &#x518D;&#x5F80;&#x4E0A;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;, &#x5982;&#x4E0B;&#x6240;&#x793A;:</p>
+<p><img src="imgs/3.jpg" alt="" width="80%"></p>
+<p>&#x4ECE; Image &#x5230; Container , &#x5219;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5728; Image &#x4E0A;&#x9762;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x5C42;&#x53EF;&#x8BFB;&#x5199; Layer:</p>
+<p><img src="imgs/5.jpg" alt="" width="80%"></p>
+<h2 id="image-&#x7684;&#x8BC6;&#x522B;">Image &#x7684;&#x8BC6;&#x522B;</h2>
+<p>&#x6709;&#x4E09;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#x4E00;&#x4E2A; Image: <code>&lt;User&gt;/&lt;Repository&gt;:&lt;Tag&gt;</code>. &#x5B98;&#x65B9;&#x7684; Image &#x53EA;&#x4F1A;&#x662F; <code>nginx:Tag</code> &#x8FD9;&#x6837;&#x7684;&#x5F62;&#x5F0F;, &#x4E0D;&#x9700;&#x8981; <code>user</code> &#x8BC6;&#x522B;.</p>
+<p>&#x800C;&#x8FD9;&#x6837;&#x7684;&#x7EC4;&#x5408;&#x548C;&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A; ImageID &#x5BF9;&#x5E94;, &#x6240;&#x4EE5;&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x8981; ImageID &#x76F8;&#x540C;, Image &#x5C31;&#x662F;&#x540C;&#x4E00;&#x4E2A;.</p>
+<p>&#x901A;&#x8FC7; push &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;&#x6539;&#x52A8;&#x7684; Image &#x63A8;&#x9001;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4ED3;&#x5E93;&#x4E2D;. &#x9700;&#x8981;&#x4F7F;&#x7528; docker login &#x5148;&#x767B;&#x5F55;, &#x767B;&#x5F55;&#x6388;&#x6743; key &#x4F1A;&#x5B58;&#x653E;&#x5728;&#x5BF9;&#x5E94;&#x7684; .docker &#x76EE;&#x5F55;&#x4E0B;&#x7684;config&#x4E2D;.</p>
+<h2 id="image-&#x7684;&#x6784;&#x5EFA;-dockerfile">Image &#x7684;&#x6784;&#x5EFA;: Dockerfile</h2>
+<p><a href="files/Dockerfile">&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x793A;&#x4F8B; Dockerfile</a>. &#x901A;&#x8FC7; <code>docker build -f &#x6587;&#x4EF6;&#x540D;</code> &#x5373;&#x53EF;&#x5BF9;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#x8FDB;&#x884C;&#x6784;&#x5EFA;.</p>
+<p>&#x4F7F;&#x7528;&#x5E26;&#x4E30;&#x5BCC;&#x529F;&#x80FD;&#x7684;&#x57FA;&#x7840;&#x955C;&#x50CF;&#x597D;&#x5904;&#x662F;&#x53EF;&#x4EE5;&#x7B80;&#x5316;&#x540E;&#x7EED;&#x6D41;&#x7A0B;, &#x4E0D;&#x8FC7;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x6784;&#x5EFA;&#x5C0F;&#x955C;&#x50CF;.</p>
+<p>&#x6BCF;&#x4E2A;&#x6307;&#x4EE4;&#x5C31;&#x662F;&#x5728;&#x955C;&#x50CF;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; Layer, &#x6240;&#x4EE5;&#x6307;&#x4EE4;&#x7684;&#x987A;&#x5E8F;&#x975E;&#x5E38;&#x91CD;&#x8981;.</p>
+<pre><code class="lang-dockerfile"><span class="hljs-comment"># &#x57FA;&#x7840;&#x955C;&#x50CF;</span>
+<span class="hljs-comment"># &#x4EFB;&#x4F55; Dockerfile &#x90FD;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A; FROM</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x60F3;&#x4ECE;&#x4E00;&#x4E2A;&#x7A7A;&#x955C;&#x50CF;&#x5F00;&#x59CB;&#x6784;&#x5EFA;, &#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; `FROM scratch`</span>
+<span class="hljs-keyword">FROM</span> debian:jessie
+
+<span class="hljs-comment"># &#x73AF;&#x5883;&#x53D8;&#x91CF;, &#x53EF;&#x9009;</span>
+<span class="hljs-comment"># &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x7EED;&#x6307;&#x4EE4;&#x4E2D;&#x4F7F;&#x7528;, &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5728; container &#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; envvar.</span>
+<span class="hljs-keyword">ENV</span> NGINX_VERSION=<span class="hljs-number">1.11</span>.<span class="hljs-number">10</span>-<span class="hljs-number">1</span>~jessie
+
+<span class="hljs-comment"># &#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x662F;&#x7B80;&#x5316;&#x4E86;&#x7684;&#x4E00;&#x4E2A; RUN, &#x5B9E;&#x9645; nginx &#x6784;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x6BD4;&#x8FD9;&#x4E2A;&#x590D;&#x6742;, &#x4EC5;&#x4E3A;&#x8BF4;&#x660E; RUN &#x6307;&#x4EE4;.</span>
+<span class="hljs-comment"># RUN &#x5373;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#x5728; container &#x7684; shell &#x4E2D;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;</span>
+<span class="hljs-comment"># &#x901A;&#x8FC7; &amp;&amp; &#x8FDE;&#x63A5;&#x547D;&#x4EE4;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x628A;&#x591A;&#x4E2A;&#x6307;&#x4EE4;&#x5206;&#x914D;&#x5230;&#x591A;&#x4E2A; Layer, &#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8282;&#x7EA6;&#x7A7A;&#x95F4;&#x548C;&#x65F6;&#x95F4;.</span>
+<span class="hljs-keyword">RUN</span> <span class="bash">apt-get update \
+    &amp;&amp; apt-get install nginx \
+    &amp;&amp; rm -rf /var/lib/apt/lists/*
+</span>
+<span class="hljs-comment"># &#x5C06;&#x6240;&#x6709;&#x7684;&#x65E5;&#x5FD7;&#x8F6C;&#x53D1;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x4E2D;, &#x5728; Docker &#x4E2D;&#x53EA;&#x80FD;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;.</span>
+<span class="hljs-comment"># &#x5176;&#x4E2D; stdout &#x548C; stderr &#x5C31;&#x662F; Docker &#x4E2D;&#x7684; &quot;log collector&quot;.</span>
+<span class="hljs-comment"># &#x8F6C;&#x53D1;&#x540E; Docker &#x5C31;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x4E86;</span>
+<span class="hljs-keyword">RUN</span> <span class="bash">ln -sf /dev/stdout /var/<span class="hljs-built_in">log</span>/nginx/access.log \
+    &amp;&amp; ln -sf /dev/stderr /var/<span class="hljs-built_in">log</span>/nginx/error.log
+</span>
+<span class="hljs-comment"># &#x66B4;&#x9732;&#x7AEF;&#x53E3;</span>
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;, Docker container &#x4E2D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x66B4;&#x9732;&#x7684;&#x7AEF;&#x53E3;, &#x65E0;&#x8BBA; tcp &#x8FD8;&#x662F; udp &#x534F;&#x8BAE;.</span>
+<span class="hljs-comment"># &#x53EF;&#x4EE5;&#x901A;&#x8FC7; EXPOSE &#x6307;&#x4EE4;&#x5C06;&#x7AEF;&#x53E3;&#x66B4;&#x9732;&#x5230;&#x865A;&#x62DF;&#x7F51;&#x7EDC;&#x4E0B;.</span>
+<span class="hljs-comment"># &#x66B4;&#x9732;&#x7AEF;&#x53E3;&#x540E;, &#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; -p/-P &#x53C2;&#x6570;&#x5728;&#x542F;&#x52A8;&#x65F6;&#x5C06;&#x7AEF;&#x53E3;&#x5F00;&#x653E;/&#x8F6C;&#x53D1;&#x5230; host &#x4E86;.</span>
+<span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">80</span> <span class="hljs-number">443</span>
+
+<span class="hljs-comment"># CMD&#x4E00;&#x822C;&#x90FD;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;, &#x4E14;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x6307;&#x4EE4;</span>
+<span class="hljs-comment"># &#x5B83;&#x63D0;&#x4F9B;&#x5F53; container &#x542F;&#x52A8;&#x540E;&#x6240;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;, &#x4E14;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A; CMD &#x6307;&#x4EE4;&#x5B58;&#x5728;</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A; CMD, &#x5219;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5C06;&#x4F1A;&#x88AB;&#x6267;&#x884C;.</span>
+<span class="hljs-keyword">CMD</span> <span class="bash">[ <span class="hljs-string">&quot;nginx&quot;</span>, <span class="hljs-string">&quot;-g&quot;</span>, <span class="hljs-string">&quot;daemon off;&quot;</span> ]
+</span></code></pre>
+<h2 id="&#x901A;&#x8FC7;-docker-build-&#x6784;&#x5EFA;-image">&#x901A;&#x8FC7; Docker build &#x6784;&#x5EFA; Image</h2>
+<p>&#x6709;&#x4E86; Dockerfile &#x6765;&#x6307;&#x5BFC; Image &#x7684;&#x6784;&#x5EFA;, &#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x6784;&#x5EFA; Image &#x4E86;.</p>
+<p>&#x5728;&#x6784;&#x5EFA;&#x8FD9;&#x4E2A; Image &#x7684;&#x65F6;&#x5019;, docker &#x4F1A;&#x9996;&#x5148;&#x62C9;&#x53D6;&#x57FA;&#x7840;&#x955C;&#x50CF;&#x5230;&#x672C;&#x5730;&#x7F13;&#x5B58;, &#x7136;&#x540E;&#x6839;&#x636E; Dockerfile &#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4E00;&#x884C;&#x4E00;&#x884C;&#x5730;&#x6267;&#x884C;, &#x5E76;&#x5C06;&#x8FD9;&#x4E9B; layer &#x7F13;&#x5B58;&#x5728;&#x672C;&#x5730;:</p>
+<pre><code class="lang-sh">docker image build -t &#x6807;&#x7B7E;&#x540D; dockerfile&#x6587;&#x4EF6;
+</code></pre>
+<p>&#x6BD4;&#x5982;:</p>
+<pre><code class="lang-sh">docker image build -t customnginx .
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.html" class="navigation navigation-prev " aria-label="Previous page: 3 Docker Network DNS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.html" class="navigation navigation-next " aria-label="Next page: 5 Docker 容器生命期和数据持久化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4 Docker Image","level":"1.8.4","depth":2,"next":{"title":"5 Docker 容器生命期和数据持久化","level":"1.8.5","depth":2,"path":"m0/5.md","ref":"m0/5.md","articles":[]},"previous":{"title":"3 Docker Network DNS","level":"1.8.3","depth":2,"path":"m0/3.md","ref":"m0/3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","splitter","ace","toggle-chapters"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"showgpray@gmail.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"r.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RxTest 学习","language":"zh-hans","gitbook":"*","description":"书籍+资料+项目式开发学习"},"file":{"path":"m0/4.md","mtime":"2020-02-05T01:52:25.214Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-22T06:45:40.320Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

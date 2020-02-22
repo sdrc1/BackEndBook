@@ -1,0 +1,26 @@
+# 通过 shell 脚本也可以达到相同的效果, 不过通过这个 yaml 文件更加可读且易于维护.
+version: '3.1'
+
+services: # 表示 containers, 和 docker container run 一样
+  servicename: # 一个易读的container名称, 它也用于 network 中的 DNS 名字
+    # 可选, 如果要使用 docker build 的话就要有这个
+    image: mysql
+    command: # 可选, 通过这个指令来替代 image 用原有的 CMD 指令
+    environment: # 可选, 用来设置环境变量, 作用和 docker container run 中 -e 参数相同
+      KEY0: VALUE0
+    volumes: # 可选, 作用和 docker container run 中 -v 参数相同
+      - ./data:/var/lib/mysql
+    ports:
+      - "80:4000" # 可选, 作用和 docker container run 中的 -p 参数相同, 将host端口和container端口进行绑定.
+    depends_on: # 可选, 用来描述服务(Container)之间的关系
+      - servicename2
+    networks:
+      - nvnet
+
+  servicename2: # 第二个 container 的名称, 保证名字唯一即可
+    networks:
+      - nvnet
+
+volumes: # 可选, 作用和 docker volume create 相同
+
+networks: # 可选, 作用和 docker network create 相同

@@ -1,0 +1,861 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6 Docker Compose的使用 · RxTest 学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="showgpray@gmail.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../m1/r.html" />
+    
+    
+    <link rel="prev" href="5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ASP.NET Core + React/Flutter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../c1/r.html">
+            
+                <a href="../c1/r.html">
+            
+                    
+                    第 1 章: "Walking Skeleton" 服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../c1/1.html">
+            
+                <a href="../c1/1.html">
+            
+                    
+                    1 服务端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../c1/2.html">
+            
+                <a href="../c1/2.html">
+            
+                    
+                    2 API 骨架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../c1/3.html">
+            
+                <a href="../c1/3.html">
+            
+                    
+                    3 附 docker 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../c2/r.html">
+            
+                <a href="../c2/r.html">
+            
+                    
+                    第 2 章: "Walking Skeleton" 客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../c2/1.html">
+            
+                <a href="../c2/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../c2/2.html">
+            
+                <a href="../c2/2.html">
+            
+                    
+                    2 通过客户端访问 API 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../c3/r.html">
+            
+                <a href="../c3/r.html">
+            
+                    
+                    第 3 章: 后端 Acvitity 接口实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../c3/1.html">
+            
+                <a href="../c3/1.html">
+            
+                    
+                    1 添加 Activity 表和 Seed Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../c3/2.html">
+            
+                <a href="../c3/2.html">
+            
+                    
+                    2 CQRS: 命令查询职责分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../c3/3.html">
+            
+                <a href="../c3/3.html">
+            
+                    
+                    3 清晰架构实现1: MediatR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../c3/4.html">
+            
+                <a href="../c3/4.html">
+            
+                    
+                    4 实现其他几个 Activity 操作: CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../c3/5.html">
+            
+                <a href="../c3/5.html">
+            
+                    
+                    5 添加 Swagger 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../c4/r.html">
+            
+                <a href="../c4/r.html">
+            
+                    
+                    第 4 章: Flutter 实现的前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../c4/1.html">
+            
+                <a href="../c4/1.html">
+            
+                    
+                    1 基盘搭建概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../c4/2.html">
+            
+                <a href="../c4/2.html">
+            
+                    
+                    2 使用 DIO 搭建数据访问层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../c4/3.html">
+            
+                <a href="../c4/3.html">
+            
+                    
+                    3 使用 Fluro 搭建路由系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../c5/r.html">
+            
+                <a href="../c5/r.html">
+            
+                    
+                    第 5 章 数据验证和错误处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../c5/1.html">
+            
+                <a href="../c5/1.html">
+            
+                    
+                    1 数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../c5/2.html">
+            
+                <a href="../c5/2.html">
+            
+                    
+                    2 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../c6/r.html">
+            
+                <a href="../c6/r.html">
+            
+                    
+                    第 6 章 Identity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../c6/1.html">
+            
+                <a href="../c6/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../c6/2.html">
+            
+                <a href="../c6/2.html">
+            
+                    
+                    2 实现 Identity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../c6/3.html">
+            
+                <a href="../c6/3.html">
+            
+                    
+                    3 JWT 实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="r.html">
+            
+                <a href="r.html">
+            
+                    
+                    第 M0 章 Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2 Docker Networking 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3 Docker Network DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4 Docker Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5 Docker 容器生命期和数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6 Docker Compose的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../m1/r.html">
+            
+                <a href="../m1/r.html">
+            
+                    
+                    第 M1 章 在开发过程中使用 Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../m1/1.html">
+            
+                <a href="../m1/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../m2/r.html">
+            
+                <a href="../m2/r.html">
+            
+                    
+                    M2 后端开发路线图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../m2/1.html">
+            
+                <a href="../m2/1.html">
+            
+                    
+                    1 计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6 Docker Compose的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="docker-compose&#x7684;&#x4F7F;&#x7528;">Docker Compose&#x7684;&#x4F7F;&#x7528;</h1>
+<p>&#x672C;&#x8282;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;:</p>
+<ul>
+<li>&#x901A;&#x8FC7; Docker Compose &#x914D;&#x7F6E;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;</li>
+<li>&#x4F7F;&#x7528;&#x7B80;&#x5355;&#x6613;&#x8BFB;&#x7684;&#x6587;&#x672C;&#x6765;&#x4FDD;&#x5B58;&#x5BB9;&#x5668;&#x7684;&#x914D;&#x7F6E;</li>
+<li>&#x914D;&#x7F6E;&#x5355;&#x884C;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x542F;&#x52A8;</li>
+<li>&#x5C06;&#x5982;&#x4E0B;&#x4E24;&#x4E2A;&#x5185;&#x5BB9;&#x5173;&#x8054;&#x8D77;&#x6765;:<ol>
+<li>&#x4F7F;&#x7528; YAML &#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x914D;&#x7F6E;, &#x5305;&#x62EC;<ul>
+<li>&#x5BB9;&#x5668;(Container)</li>
+<li>&#x7F51;&#x7EDC;(network)</li>
+<li>&#x6570;&#x636E;&#x5377;(volume)</li>
+</ul>
+</li>
+<li>&#x4F7F;&#x7528; docker-compose &#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x5C06;&#x672C;&#x5730;&#x5F00;&#x53D1;/&#x6D4B;&#x8BD5;&#x5DE5;&#x4F5C;&#x81EA;&#x52A8;&#x5316;</li>
+</ol>
+</li>
+</ul>
+<p>docker-compose.yml &#x6587;&#x4EF6;&#x7528;&#x4E8E;:</p>
+<ul>
+<li>&#x8BB0;&#x5F55;&#x4F7F;&#x7528;&#x7684; compose &#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;</li>
+<li>&#x88AB;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x672C;&#x5730;&#x81EA;&#x52A8;&#x5316;</li>
+<li>&#x88AB; docker &#x7528;&#x6765;&#x76F4;&#x63A5;&#x5904;&#x7406;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E0B;&#x7684; Swarm &#x914D;&#x7F6E;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x7684; compose &#x6587;&#x4EF6;&#x540D;&#x662F; <code>docker-compose.yml</code>, &#x4F46;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>docker-compose -f</code> &#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;.</p>
+<h2 id="docker-compose-&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7B80;&#x4ECB;">docker compose &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7B80;&#x4ECB;</h2>
+<p>&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684; docker-compose &#x6587;&#x4EF6;&#x5982;&#x4E0B;&#x6240;&#x793A;:</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># &#x901A;&#x8FC7; shell &#x811A;&#x672C;&#x4E5F;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x76F8;&#x540C;&#x7684;&#x6548;&#x679C;, &#x4E0D;&#x8FC7;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A; yaml &#x6587;&#x4EF6;&#x66F4;&#x52A0;&#x53EF;&#x8BFB;&#x4E14;&#x6613;&#x4E8E;&#x7EF4;&#x62A4;.</span>
+<span class="hljs-attr">version:</span> <span class="hljs-string">&apos;3.1&apos;</span>
+
+<span class="hljs-attr">services:</span> <span class="hljs-comment"># &#x8868;&#x793A; containers, &#x548C; docker container run &#x4E00;&#x6837;</span>
+<span class="hljs-attr">  servicename:</span> <span class="hljs-comment"># &#x4E00;&#x4E2A;&#x6613;&#x8BFB;&#x7684;container&#x540D;&#x79F0;, &#x5B83;&#x4E5F;&#x7528;&#x4E8E; network &#x4E2D;&#x7684; DNS &#x540D;&#x5B57;</span>
+    <span class="hljs-comment"># &#x53EF;&#x9009;, &#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528; docker build &#x7684;&#x8BDD;&#x5C31;&#x8981;&#x6709;&#x8FD9;&#x4E2A;</span>
+<span class="hljs-attr">    image:</span> mysql
+<span class="hljs-attr">    command:</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x6765;&#x66FF;&#x4EE3; image &#x7528;&#x539F;&#x6709;&#x7684; CMD &#x6307;&#x4EE4;</span>
+<span class="hljs-attr">    environment:</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;, &#x4F5C;&#x7528;&#x548C; docker container run &#x4E2D; -e &#x53C2;&#x6570;&#x76F8;&#x540C;</span>
+<span class="hljs-attr">      KEY0:</span> VALUE0
+<span class="hljs-attr">    volumes:</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x4F5C;&#x7528;&#x548C; docker container run &#x4E2D; -v &#x53C2;&#x6570;&#x76F8;&#x540C;</span>
+<span class="hljs-bullet">      -</span> ./data:/var/lib/mysql
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">&quot;80:4000&quot;</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x4F5C;&#x7528;&#x548C; docker container run &#x4E2D;&#x7684; -p &#x53C2;&#x6570;&#x76F8;&#x540C;, &#x5C06;host&#x7AEF;&#x53E3;&#x548C;container&#x7AEF;&#x53E3;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;.</span>
+<span class="hljs-attr">    depends_on:</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x7528;&#x6765;&#x63CF;&#x8FF0;&#x670D;&#x52A1;(Container)&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;</span>
+<span class="hljs-bullet">      -</span> servicename2
+
+<span class="hljs-attr">  servicename2:</span> <span class="hljs-comment"># &#x7B2C;&#x4E8C;&#x4E2A; container &#x7684;&#x540D;&#x79F0;, &#x4FDD;&#x8BC1;&#x540D;&#x5B57;&#x552F;&#x4E00;&#x5373;&#x53EF;</span>
+
+<span class="hljs-attr">volumes:</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x4F5C;&#x7528;&#x548C; docker volume create &#x76F8;&#x540C;</span>
+
+<span class="hljs-attr">networks:</span> <span class="hljs-comment"># &#x53EF;&#x9009;, &#x4F5C;&#x7528;&#x548C; docker network create &#x76F8;&#x540C;</span>
+</code></pre>
+<p>&#x66F4;&#x591A;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x53C2;&#x8003; docker &#x6587;&#x6863;.</p>
+<h2 id="docker-compose-&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;">docker-compose &#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x5728; mac &#x548C; windows &#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x81EA;&#x5E26;, &#x5728; linux &#x4E0A;&#x9700;&#x8981;&#x989D;&#x5916;&#x5B89;&#x88C5;. &#x5B83;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x751F;&#x4EA7;&#x7EA7;&#x522B;&#x7684;&#x5DE5;&#x5177;, &#x4F46;&#x5728;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x4E2D;&#x975E;&#x5E38;&#x5E38;&#x7528;.</p>
+<p>&#x4E24;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x547D;&#x4EE4;:</p>
+<ul>
+<li><code>docker-compose up</code>: &#x6839;&#x636E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5BB9;&#x5668;/&#x7F51;&#x7EDC;/&#x6570;&#x636E;&#x5377;&#x7684;&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;&#x6240;&#x6709;&#x7684;&#x5BB9;&#x5668;.</li>
+<li><code>docker-compose down</code>: &#x505C;&#x6B62;&#x6240;&#x6709;&#x7684;&#x5BB9;&#x5668;&#x5E76;&#x79FB;&#x9664;&#x5BB9;&#x5668;/&#x7F51;&#x7EDC;/&#x6570;&#x636E;&#x5377;?</li>
+</ul>
+<p>&#x5982;&#x679C;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;&#x90FD;&#x6709;&#x4E00;&#x4E2A; Dockerfile, &#x7136;&#x540E;&#x901A;&#x8FC7; docker-comse.yml &#x6587;&#x4EF6;&#x7EC4;&#x5408;&#x5B83;&#x4EEC;, &#x5219;&#x542F;&#x52A8;&#x6240;&#x6709;&#x5DE5;&#x7A0B;&#x7684;&#x6B65;&#x9AA4;&#x5C31;&#x7B80;&#x5316;&#x4E3A;&#x5982;&#x4E0B;:</p>
+<ol>
+<li>&#x514B;&#x9686;&#x9879;&#x76EE;&#x5230;&#x673A;&#x5668;&#x4E0A;: git clone ...</li>
+<li><code>docker-compose up</code>(&#x5982;&#x679C;&#x60F3;&#x540E;&#x53F0;&#x8FD0;&#x884C;, &#x53EA;&#x9700;&#x8981;&#x52A0; <code>-d</code> &#x53C2;&#x6570;&#x5373;&#x53EF;)</li>
+</ol>
+<p>&#x5728; linux &#x673A;&#x5668;&#x4E0A;&#x9700;&#x8981;&#x5728; <a href="https://github.com/docker/compose/releases" target="_blank">docker compose &#x7684; github &#x4E3B;&#x9875;</a>&#x4E0A;&#x627E;&#x5230;&#x9700;&#x8981;&#x7684;&#x7248;&#x672C;, &#x6839;&#x636E;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x5373;&#x53EF;.</p>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x955C;&#x50CF;, &#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>docker-compose build</code> &#x547D;&#x4EE4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.html" class="navigation navigation-prev " aria-label="Previous page: 5 Docker 容器生命期和数据持久化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../m1/r.html" class="navigation navigation-next " aria-label="Next page: 第 M1 章 在开发过程中使用 Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6 Docker Compose的使用","level":"1.8.6","depth":2,"next":{"title":"第 M1 章 在开发过程中使用 Docker","level":"1.9","depth":1,"path":"m1/r.md","ref":"m1/r.md","articles":[{"title":"1 概述","level":"1.9.1","depth":2,"path":"m1/1.md","ref":"m1/1.md","articles":[]}]},"previous":{"title":"5 Docker 容器生命期和数据持久化","level":"1.8.5","depth":2,"path":"m0/5.md","ref":"m0/5.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","splitter","ace","toggle-chapters"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"showgpray@gmail.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"r.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RxTest 学习","language":"zh-hans","gitbook":"*","description":"书籍+资料+项目式开发学习"},"file":{"path":"m0/6.md","mtime":"2020-02-16T03:42:35.699Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-22T06:45:40.320Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

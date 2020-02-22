@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  proxy:
+    image: nginx
+    ports: 
+      - '80:80'
+    volumes: 
+      # :ro 表示 read only, 这样可以很好保护宿主机的文件
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    web:
+      image: httpd

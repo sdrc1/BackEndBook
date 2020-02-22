@@ -1,0 +1,915 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2 错误处理 · RxTest 学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="showgpray@gmail.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../c6/r.html" />
+    
+    
+    <link rel="prev" href="1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ASP.NET Core + React/Flutter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../c1/r.html">
+            
+                <a href="../c1/r.html">
+            
+                    
+                    第 1 章: "Walking Skeleton" 服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../c1/1.html">
+            
+                <a href="../c1/1.html">
+            
+                    
+                    1 服务端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../c1/2.html">
+            
+                <a href="../c1/2.html">
+            
+                    
+                    2 API 骨架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../c1/3.html">
+            
+                <a href="../c1/3.html">
+            
+                    
+                    3 附 docker 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../c2/r.html">
+            
+                <a href="../c2/r.html">
+            
+                    
+                    第 2 章: "Walking Skeleton" 客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../c2/1.html">
+            
+                <a href="../c2/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../c2/2.html">
+            
+                <a href="../c2/2.html">
+            
+                    
+                    2 通过客户端访问 API 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../c3/r.html">
+            
+                <a href="../c3/r.html">
+            
+                    
+                    第 3 章: 后端 Acvitity 接口实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../c3/1.html">
+            
+                <a href="../c3/1.html">
+            
+                    
+                    1 添加 Activity 表和 Seed Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../c3/2.html">
+            
+                <a href="../c3/2.html">
+            
+                    
+                    2 CQRS: 命令查询职责分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../c3/3.html">
+            
+                <a href="../c3/3.html">
+            
+                    
+                    3 清晰架构实现1: MediatR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../c3/4.html">
+            
+                <a href="../c3/4.html">
+            
+                    
+                    4 实现其他几个 Activity 操作: CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../c3/5.html">
+            
+                <a href="../c3/5.html">
+            
+                    
+                    5 添加 Swagger 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../c4/r.html">
+            
+                <a href="../c4/r.html">
+            
+                    
+                    第 4 章: Flutter 实现的前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../c4/1.html">
+            
+                <a href="../c4/1.html">
+            
+                    
+                    1 基盘搭建概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../c4/2.html">
+            
+                <a href="../c4/2.html">
+            
+                    
+                    2 使用 DIO 搭建数据访问层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../c4/3.html">
+            
+                <a href="../c4/3.html">
+            
+                    
+                    3 使用 Fluro 搭建路由系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="r.html">
+            
+                <a href="r.html">
+            
+                    
+                    第 5 章 数据验证和错误处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1 数据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../c6/r.html">
+            
+                <a href="../c6/r.html">
+            
+                    
+                    第 6 章 Identity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../c6/1.html">
+            
+                <a href="../c6/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../c6/2.html">
+            
+                <a href="../c6/2.html">
+            
+                    
+                    2 实现 Identity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../c6/3.html">
+            
+                <a href="../c6/3.html">
+            
+                    
+                    3 JWT 实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../m0/r.html">
+            
+                <a href="../m0/r.html">
+            
+                    
+                    第 M0 章 Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../m0/1.html">
+            
+                <a href="../m0/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../m0/2.html">
+            
+                <a href="../m0/2.html">
+            
+                    
+                    2 Docker Networking 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../m0/3.html">
+            
+                <a href="../m0/3.html">
+            
+                    
+                    3 Docker Network DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../m0/4.html">
+            
+                <a href="../m0/4.html">
+            
+                    
+                    4 Docker Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../m0/5.html">
+            
+                <a href="../m0/5.html">
+            
+                    
+                    5 Docker 容器生命期和数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../m0/6.html">
+            
+                <a href="../m0/6.html">
+            
+                    
+                    6 Docker Compose的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../m1/r.html">
+            
+                <a href="../m1/r.html">
+            
+                    
+                    第 M1 章 在开发过程中使用 Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../m1/1.html">
+            
+                <a href="../m1/1.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../m2/r.html">
+            
+                <a href="../m2/r.html">
+            
+                    
+                    M2 后端开发路线图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../m2/1.html">
+            
+                <a href="../m2/1.html">
+            
+                    
+                    1 计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2 错误处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x9519;&#x8BEF;&#x5904;&#x7406;</h1>
+<p>&#x603B;&#x4F53;&#x601D;&#x8DEF;&#x5982;&#x4E0B;:</p>
+<ol>
+<li>&#x521B;&#x5EFA; APP &#x81EA;&#x5DF1;&#x7279;&#x6709;&#x7684;&#x9519;&#x8BEF;&#x4F53;&#x7CFB;</li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5904;&#x7406; APP &#x81EA;&#x5DF1;&#x9519;&#x8BEF;&#x4F53;&#x7CFB;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;</li>
+<li>&#x4E1A;&#x52A1;&#x5C42;&#x5728;&#x76F8;&#x5173;&#x9519;&#x8BEF;&#x53D1;&#x751F;&#x65F6;, &#x76F4;&#x63A5;&#x629B;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x9519;&#x8BEF;</li>
+<li>&#x4E2D;&#x95F4;&#x4EF6;&#x5728;&#x63A5;&#x6536;&#x5230;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7684;&#x9519;&#x8BEF;&#x65F6;, &#x5C06;&#x9519;&#x8BEF;&#x8F6C;&#x6362;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x7801;&#x54CD;&#x5E94;&#x53D1;&#x9001;&#x56DE;&#x53BB;.</li>
+</ol>
+<h2 id="&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x7C7B;&#x578B;">&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x7C7B;&#x578B;</h2>
+<p>&#x9519;&#x8BEF;&#x7684;&#x5B9A;&#x4E49;&#x53EF;&#x4EE5;&#x5728; Domain &#x4E2D;, &#x8FD9;&#x6837;&#x65B9;&#x4FBF;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4F7F;&#x7528;. &#x8FD9;&#x91CC;&#x4EC5;&#x4E3A;&#x6F14;&#x793A;, &#x6545;&#x76F4;&#x63A5;&#x5728; Application &#x5C42;&#x4E2D;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x7C7B;&#x578B;:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">RestException</span> : <span class="hljs-title">Exception</span> {
+    <span class="hljs-keyword">public</span> HttpStatusCode Code { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">object</span> Errors { <span class="hljs-keyword">get</span>; }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">RestException</span>(<span class="hljs-params">HttpStatusCode code, <span class="hljs-keyword">object</span> errors = <span class="hljs-keyword">null</span></span>) </span>{
+        <span class="hljs-keyword">this</span>.Errors = errors;
+        <span class="hljs-keyword">this</span>.Code = code;
+    }
+}
+</code></pre>
+<h2 id="&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x4E2D;&#x95F4;&#x4EF6;">&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x4E2D;&#x95F4;&#x4EF6;</h2>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x8981;&#x6C42;:</p>
+<ol>
+<li>&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>Invoke</code> &#x6216; <code>InvokeAsync</code> &#x7684;&#x65B9;&#x6CD5;, &#x4E14;&#x65B9;&#x6CD5;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F; <code>HttpContext</code> &#x7C7B;&#x578B;&#x7684;, &#x5176;&#x4ED6;&#x9700;&#x8981;&#x7684;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5B9A;, &#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x63D0;&#x4F9B;.</li>
+<li>&#x4F7F;&#x7528;&#x7EA6;&#x5B9A;&#x5927;&#x4E8E;&#x914D;&#x7F6E;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5904;&#x7406;.</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x683C;&#x5F0F;&#x4E5F;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8981;&#x6C42;, &#x5982;&#x679C;&#x9700;&#x8981;&#x8C03;&#x7528;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;, &#x5219;&#x53EF;&#x4EE5;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F20;&#x5165;&#x4E00;&#x4E2A; <code>RequestDelegate</code> &#x7C7B;&#x578B;&#x53C2;&#x6570;, &#x8868;&#x793A;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;.</li>
+</ol>
+<p>&#x5982;&#x4E0B;&#x6240;&#x793A;:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ErrorHandlingMiddleware</span>
+{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> ILogger&lt;ErrorHandlingMiddleware&gt; _logger;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> RequestDelegate _next;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ErrorHandlingMiddleware</span>(<span class="hljs-params">RequestDelegate next, ILogger&lt;ErrorHandlingMiddleware&gt; logger</span>)
+    </span>{
+        _next = next;
+        _logger = logger;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">Invoke</span>(<span class="hljs-params">HttpContext context</span>)
+    </span>{
+        <span class="hljs-comment">// &#x7531;&#x4E8E;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x4E2D;&#x95F4;&#x4EF6;, &#x6545;&#x5E0C;&#x671B;&#x7684;&#x662F;&#x5148;&#x6267;&#x884C;&#x4E86; next &#x518D;&#x6765;&#x6355;&#x6349;&#x5E76;&#x5904;&#x7406;&#x9519;&#x8BEF;</span>
+        <span class="hljs-keyword">try</span>
+        {
+            <span class="hljs-keyword">await</span> _next(context);
+        }
+        <span class="hljs-keyword">catch</span> (Exception ex)
+        {
+            <span class="hljs-keyword">await</span> HandleExceptionAsync(context, ex, _logger);
+        }
+    }
+
+    <span class="hljs-comment"><span class="hljs-doctag">///</span> &#x5BF9;&#x9519;&#x8BEF;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#x5904;&#x7406;: &#x6839;&#x636E;&#x9519;&#x8BEF;&#x7684;&#x7C7B;&#x578B;&#x5BF9;&#x54CD;&#x5E94;&#x8FDB;&#x884C;&#x4FEE;&#x6539;.</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">HandleExceptionAsync</span>(<span class="hljs-params">HttpContext context, Exception ex, ILogger&lt;ErrorHandlingMiddleware&gt; logger</span>)
+    </span>{
+        <span class="hljs-keyword">object</span> errors = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">switch</span> (ex)
+        {
+            <span class="hljs-keyword">case</span> RestException re:
+                logger.LogError(ex, <span class="hljs-string">&quot;REST ERROR&quot;</span>);
+                errors = re.Errors;
+                <span class="hljs-comment">// C# &#x4E2D; enum &#x7684; case &#x503C;&#x83B7;&#x53D6;&#x65B9;&#x5F0F;&#x662F;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x8F6C;&#x6362;</span>
+                context.Response.StatusCode = (<span class="hljs-keyword">int</span>)re.Code;
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> Exception e:
+                logger.LogError(e, <span class="hljs-string">&quot;SERVER ERROR&quot;</span>);
+                errors = <span class="hljs-keyword">string</span>.IsNullOrWhiteSpace(e.Message) ? <span class="hljs-string">&quot;Error&quot;</span> : e.Message;
+                context.Response.StatusCode = (<span class="hljs-keyword">int</span>)HttpStatusCode.InternalServerError;
+                <span class="hljs-keyword">break</span>;
+        }
+        context.Response.ContentType = <span class="hljs-string">&quot;application/json&quot;</span>;
+        <span class="hljs-keyword">if</span> (errors != <span class="hljs-keyword">null</span>)
+        {
+            <span class="hljs-keyword">var</span> option = <span class="hljs-keyword">new</span> JsonSerializerOptions
+            {
+                <span class="hljs-comment">// &#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x6765;&#x5904;&#x7406; JSON key</span>
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                <span class="hljs-comment">// pretty printed</span>
+                WriteIndented = <span class="hljs-keyword">true</span>
+            };
+
+            <span class="hljs-comment">// &#x7528;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x5BF9;&#x8C61;&#x5305;&#x88F9; errors, &#x907F;&#x514D;&#x51FA;&#x73B0;&#x5F53; errors &#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65F6;&#x5019;&#x8FD4;&#x56DE; JSON &#x9876;&#x5C42;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x975E; JSON &#x5BF9;&#x8C61;&#x7684;&#x95EE;&#x9898;.</span>
+            <span class="hljs-keyword">var</span> result = JsonSerializer.Serialize(<span class="hljs-keyword">new</span>
+            {
+                Error = errors
+            }, option);
+            <span class="hljs-keyword">await</span> context.Response.WriteAsync(result);
+        }
+    }
+}
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x65F6;, &#x53EA;&#x9700;&#x5728;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x7BA1;&#x7EBF;&#x6700;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;:</p>
+<pre><code class="lang-cs">app.UseMiddleware&lt;ErrorHandlingMiddleware&gt;();
+
+<span class="hljs-comment">// if (env.IsDevelopment())</span>
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//     app.UseDeveloperExceptionPage();</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+<p>&#x5728;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x4E2D;&#x629B;&#x51FA;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5F02;&#x5E38;:</p>
+<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;Unit&gt; <span class="hljs-title">Handle</span>(<span class="hljs-params">Command request, CancellationToken cancellationToken</span>)
+</span>{
+    <span class="hljs-keyword">var</span> activity = <span class="hljs-keyword">await</span> _context.Activities.FindAsync(request.Id);
+
+    <span class="hljs-keyword">if</span> (activity == <span class="hljs-keyword">null</span>)
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> RestException(HttpStatusCode.NotFound, <span class="hljs-string">&quot;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684; Activity&quot;</span>);
+
+    _context.Remove(activity);
+    <span class="hljs-keyword">var</span> success = <span class="hljs-keyword">await</span> _context.SaveChangesAsync() &gt; <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span> (success) <span class="hljs-keyword">return</span> Unit.Value;
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(<span class="hljs-string">&quot;&#x5220;&#x9664; Activity &#x5931;&#x8D25;&quot;</span>);
+}
+</code></pre>
+<p>&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528;&#x4E0D;&#x5B58;&#x5728;&#x7684; Id &#x8FDB;&#x884C;&#x5220;&#x9664;&#x8BF7;&#x6C42;&#x65F6;, &#x54CD;&#x5E94;&#x4F53;&#x4E2D;&#x5C31;&#x643A;&#x5E26;&#x4E86;&#x9519;&#x8BEF;&#x4FE1;&#x606F;:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;error&quot;</span>: <span class="hljs-string">&quot;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684; Activity&quot;</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.html" class="navigation navigation-prev " aria-label="Previous page: 1 数据验证">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../c6/r.html" class="navigation navigation-next " aria-label="Next page: 第 6 章 Identity">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2 错误处理","level":"1.6.2","depth":2,"next":{"title":"第 6 章 Identity","level":"1.7","depth":1,"path":"c6/r.md","ref":"c6/r.md","articles":[{"title":"1 概述","level":"1.7.1","depth":2,"path":"c6/1.md","ref":"c6/1.md","articles":[]},{"title":"2 实现 Identity","level":"1.7.2","depth":2,"path":"c6/2.md","ref":"c6/2.md","articles":[]},{"title":"3 JWT 实现","level":"1.7.3","depth":2,"path":"c6/3.md","ref":"c6/3.md","articles":[]}]},"previous":{"title":"1 数据验证","level":"1.6.1","depth":2,"path":"c5/1.md","ref":"c5/1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","splitter","ace","toggle-chapters"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"showgpray@gmail.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"r.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RxTest 学习","language":"zh-hans","gitbook":"*","description":"书籍+资料+项目式开发学习"},"file":{"path":"c5/2.md","mtime":"2020-01-31T07:41:26.294Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-22T06:45:40.320Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
